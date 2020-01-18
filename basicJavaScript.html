@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+    //runs test to see the result
+    function myFunctionTest(expected, found) {
+        if(expected === found) {
+            return "TEST SUCCEED";
+        } else {
+            return "TEST FAILED. Expected " + expected + " found " + found;
+        }
+    }
+
+    /*max returns the maximum of 2 arguments */
+    const max = (num1, num2) => {
+    return num1 >= num2 ? num1 : num2;
+}
+    console.log("Expected output of max(20,10) is 20 " + myFunctionTest(20, max(20, 10)));
+
+    /* max3 takes 3 numbers as arguments and returns the largest */
+    const maxOfThree = (num1, num2, num3) => {
+    if (num1 >= num2 && num1 >= num3) {
+        return num1;
+    } else if (num2 >= num1 && num2 >= num3) {
+        return num2;
+    } else {
+        return num3;
+    }
+}
+    console.log("Expected output of maxOfThree(5,4,44) is 44 " + myFunctionTest(44, maxOfThree(5, 4, 44)));
+
+    const isVowel = (ch) => {
+    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+        return true;
+    else
+        return false;
+}
+
+    console.log("Expected output of isVowel(o) is true " + myFunctionTest(true, isVowel('o')));
+
+    const sum = (...elements) => {
+    let summ = 0;
+    for (let i = 0; i < elements.length; i++) {
+        summ += elements[i];
+    }
+
+    return summ;
+}
+
+const multiply = (...elements) => {
+    let multiply = 1;
+    for (let i = 0; i < elements.length; i++) {
+        multiply *= elements[i];
+    }
+
+    return multiply;
+}
+    console.log("Expected output of sum[1,2,3,4] is 10 " + myFunctionTest(10, sum(1,2,3,4)));
+    console.log("Expected output of multiply[1,2,3,4] is 24 " + myFunctionTest(24, multiply(1,2,3,4)));
+
+    const reverse = (element) => {
+    return element.split("").reverse().join("");
+}
+
+const findLongestWord = (...elements) => {
+    return elements.reduce((a, b) => { return a.length > b.length ? a : b; });
+}
+console.log("Expected output of isVowel(o) is true " + myFunctionTest(true, isVowel('o')));
+
+const filterLongWords = (elements, i) => {
+    let arr = [];
+    elements.forEach(element => {
+        if (element.length > i)
+            arr.push(element);
+    });
+    return arr;
+}
+console.log("Expected output of isVowel(o) is true " + myFunctionTest(true, isVowel('o')));
+
+    </script>
+    </head>
+    <body>
+
+        Open your browser console.
+	CTRL + Shift + J
+
+    </body>
+    </html>
