@@ -28,7 +28,7 @@ window.onload = function () {
             textArea.style.fontWeight = 'bold';
             textArea.style.color = 'green';
             textArea.style.textDecoration = 'underline';
-            document.getElementById('body').style.backgroundImage = "url('https://courses.cs.washington.edu/courses/cse190m/CurrentQtr/labs/6/hundred-dollar-bill.jpg')";
+            document.getElementById('body').style.backgroundImage = "url('https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,g_face:auto,h_494,q_60,w_1700/v1/clients/saltlake/SkiCity_ResortsMarch2017_HiRez_AustenDiamondPhotography_69_f2359e3f-0f6c-430d-8392-7146a18714b6.jpg')";
         }
         else {
             textArea.style.fontWeight = 'normal';
