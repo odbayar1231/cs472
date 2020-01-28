@@ -1,5 +1,5 @@
-
-(function () {
+(function(){
+  
     var AnimationScreen;
     var animationInterval;
 
@@ -12,6 +12,7 @@
 
 
     function onload() {
+	console.log("onload");
         var btnStart = document.getElementById('btnStart');
         var btnStop = document.getElementById('btnStop');
         var slcAnimations = document.getElementById('slcAnimation');
@@ -75,4 +76,4 @@
         animationSelected = frames;
     }
 
-})();
+})()
